@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Dashboard</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+           
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="active has-sub">
+                            <a href="#">
+                                <i class="fas fa-tachometer-alt"></i>Inicio</a>                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-chart-bar"></i>Registro</a>
+                        </li>
+                        <li>
+                            <a href="Docentes.html">
+                                <i class="fas fa-table"></i>Docentes</a>
+                        </li>
+                        <li>
+                            <a class="js-arrow" href="horarios.html">
+                                <i class="far fa-check-square"></i>Horarios</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-calendar-alt"></i>Calendar</a>
+                        </li>  
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="account2">
+                <div class="image img-cir img-120">
+                    <img src="images/escudo.jpg" alt="Colegio  Santa-Teresa" />
+                </div>
+                
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="active has-sub">
+                            <a href="#">
+                                <i class="fas fa-home"></i>Inicio</a>                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-table"></i>Registro</a>
+                        </li>
+                        <li>
+                            <a class="js-arrow" href="Docentes.html">
+                                <i class="fas fa-user"></i>Docentes</a>
+                        </li>
+                        <li>
+                            <a href="horarios.html">
+                                <i class="far fa-check-square"></i>Horarios</a>
+                        </li>
+                                                                      
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Horarios</h2>
+                                    <button class="au-btn au-btn-icon au-btn--blue" data-toggle="modal" data-target="#mediumModal">
+                                        <i class="zmdi zmdi-plus"></i>Agregar Horario</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row m-t-30">
+                            <div class="col-md-12">
+                                <!-- DATA TABLE-->
+                                <div class="table-responsive table--no-card m-b-30">
+                                    <table class="table table-borderless table-striped table-earning" id="tabla">
+                                        <thead>
+                                            <tr class="info">
+                                                <th>Nombre</th>
+                                                <th>Tipo</th>
+                                                <th>fechainicio</th>
+                                                <th>horainicio</th>
+                                                <th>fechadecierre</th>
+                                                <th>Horadecierre</th>
+                                                <th>Lunes</th>
+                                                <th>Martes</th>
+                                                <th>Miercoles</th>
+                                                <th>jueves</th>
+                                                <th>viernes</th>
+                                                <th>sabado </th>
+                                                <th>domingo</th>
+
+                                                <th colspan="12"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                         
+                                    </table>
+                                </div>
+                                <!-- END DATA TABLE-->
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+        </div>
+
+    </div>
+
+    <!-- modal medium -->
+			<div class="modal fade" id="mediumModal" tabindex="-1" role="dialog" >
+				<div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="card-header">
+                            <strong>Hor</strong> Formulario
+                        </div>
+                        <div class="card-body card-block">
+                            <form action="" method="post" class="form-horizontal">
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="hf-email" class=" form-control-label">Nombre</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="nombre" name="hf-email" placeholder="Ingrese Nombre..." class="form-control">
+                                         
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="select" class=" form-control-label">Tipo</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <select name="select" id="select" class="form-control">
+                                            <option value="0">escoga una opcion</option>
+                                            <option value="1">Ingreso</option>
+                                            <option value="2">Restringir</option>                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="hf-email" class=" form-control-label">Fecha de inicio</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="date" id="inicio" name="hf-email" placeholder="Ingrese Nombre..." class="form-control">
+                                         
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="hf-email" class=" form-control-label">Hora de inicio</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="time" id="horainicio" name="hf-email" placeholder="Ingrese Nombre..." class="form-control">
+                                         
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="hf-email" class=" form-control-label">Fecha de cierre</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="date" id="cierre" name="hf-email" placeholder="Ingrese fecha..." class="form-control">
+                                         
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="hf-email" class=" form-control-label">Hora de cierre</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="time" id="horacierre" name="hf-email" placeholder="Ingrese Nombre..." class="form-control">
+                                         
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label class=" form-control-label">Dias</label>
+                                    </div>
+                                    <div class="col col-md-9">
+                                        <div class="form-check">
+                                            <div class="checkbox">
+                                                <label for="checkbox1" class="form-check-label ">
+                                                    <input type="checkbox" id="checkbox1" name="checkbox1" value="1" class="form-check-input"> Lunes
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="checkbox2" class="form-check-label ">
+                                                    <input type="checkbox" id="checkbox2" name="checkbox2" value="2" class="form-check-input"> Martes
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="checkbox3" class="form-check-label ">
+                                                    <input type="checkbox" id="checkbox3" name="checkbox3" value="3" class="form-check-input"> Miercoles
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="checkbox1" class="form-check-label ">
+                                                    <input type="checkbox" id="checkbox4" name="checkbox1" value="4" class="form-check-input"> Jueves
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="checkbox2" class="form-check-label ">
+                                                    <input type="checkbox" id="checkbox5" name="checkbox2" value="5" class="form-check-input"> Viernes
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="checkbox3" class="form-check-label ">
+                                                    <input type="checkbox" id="checkbox6" name="checkbox3" value="6" class="form-check-input"> Sabado
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="checkbox3" class="form-check-label ">
+                                                    <input type="checkbox" id="checkbox7" name="checkbox3" value="7" class="form-check-input"> Domingo
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="guardarhorario"class="btn btn-primary">Guardar horario</button>
+                            <button type="button" id="cerrar" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                          </div>
+                    </div>
+                  </div>
+            </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            esta seguro de eliminar?
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Colegio SantaTeresa</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        Esta seguro de querer eliminar esta fecha?
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">no</button>
+                      <button type="button"id="si" class="btn btn-primary">si</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			<!-- end modal medium -->
+           
+    <!-- Jquery JS-->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAG_WNuLvZ1fEPqZEhyU3p8FkWjemZoU4I",
+    authDomain: "santa-teresa-2c134.firebaseapp.com",
+    databaseURL: "https://santa-teresa-2c134.firebaseio.com",
+    projectId: "santa-teresa-2c134",
+    storageBucket: "santa-teresa-2c134.appspot.com",
+    messagingSenderId: "853531172575"
+  };
+  firebase.initializeApp(config);
+</script>
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+    <script src="js/cruddocente.js"></script>
+    <script src="js/crudfecha.js"></script>
+</body>
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+</html>
+<!-- end document-->

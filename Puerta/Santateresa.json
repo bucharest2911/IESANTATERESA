@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "santa-teresa-2c134",
+  "private_key_id": "fa1e231926e1dd1353325ca6d61e84f74475deb9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDhFm5DE9Ggwbv3\nEP1eqn7LW39qgH29LDxzZV7VydoCKbHgOBhVi2qn/fGSWwbnXkDAf0ljtWCL0o47\ntkyBk3APKLeNqQW0ohf+WfDNB+ANsWgZyFCF2kwR5s2SiKtitJfc697QOHxO6Kc1\nt/ygi+iRxqo6R1Kwxy1hYK9Obot8PJlzTz+nvkfvvBUvjSjYI1dThy5hUuSJ2MQc\nna7M3ptns8NB4DzhOHD1Jiny9SPnmheh7ByEx0TWbgAXrs/ivte6ntAwinLU1JT/\nhs5a/zfwy/BGvk1bDh2kZlG1L6BrjOW0jSf2YnsjyQoVeJOwGq8MQP+mO+rdIkre\ngcB+E8hBAgMBAAECggEAIHuV9His+SPUPiq1wd5dd3fwGpzJ6I20eJvBtJ0RaNv/\nB0JZIqlAvlcbsFkSFTwpII6N9wVzFiKP86aSgmWWV52y5Y7lm6SDzWlJ4rDXAOrg\nAM6DblmrPi8ebh3qi89Plip06HwqVlHlZY90de/S44y1vrzRvmC0GBg1nF5AI3Cv\nEiC+u0jEOofB3kcX5DWwiMjWIZQu9JjvOVvvzQrNcEhNVpYjsx3t/c261sPTsMbe\nPNFDLorXoeFS+EbtdIVJUF3BtE+Dm+RJqCbUnOIrW4jzbGLe7RnBFt+pVrXV8nZ3\naR/lyXEvdmAMmrI1mgAy5z65KmEV/1qssHMQYNtVtQKBgQD0LMz18ZeXxsPY29pN\npkofHt4G4Rd3XZQEF4tGQsmtdbdd8gNYeoYd9jdvorp/ghwYtyUXg/zno9aU0JDW\nGUT1jYln1dIj6BHhHU8gMaLR/zm0EnkHgSGYyJ8wpdMJFnsCZsC3DKXxL/zU26z2\n0cDz1wNpbd0IqiErVEqzj6nT3QKBgQDr/P279Pm1O+WtO3sXkx1BJvz/uiYKwPYh\nPvjkhhYibyCMWL+amcwHY6i/PWfd5+VvTdvhzMyo+zZIopar2oWyP5+E12NaAT8z\nECiYry0eLLukqAEbmWqkjSccxfMAmq8GwOAkWzLOpg1R53eSqIgdTZIwgOs/KkAF\nTRbWeR+htQKBgDdQBsYYCl0pe6gedZ9tchEGrwkj6Grz2dnrc3NhIcqXhghUEIn0\nh3k2E2zIkjLcSH0Yz+A52AqpRKzFamn1o3d0rpHFECtuIM68EvaaB+ZGSM4P+TbH\n+9JecCFXDy1Z2Fe86x8MUHMIid+2O8JV1b3nETDK4G1cDNOB7sIqYzBJAoGAQCYi\ndzBtnLVuhruvh0YHYsmNZpqccrnnbjwm/j/wzmV07JHHa+g4zR1rJqkzjd/Wv33j\nsqqwS5MWO4JvAMJDK6Qd4ceHC1Vhb6kJ0A92bUhtraG5w13d3mM8aZbpqpVh1K0j\ngN6FniUHY+dO2sATWBvZDHRO/nmms4o0FhMQ5S0CgYEA8FJ6KbDNdJvZMiQxBDf8\nE20gAxGSUugBe9AeNMJUTsPc8A2pz7H8nMwo48Ocn1545RpqtdUcMw32GptILrlX\n/KxP/ZEonqmjIoLst7X9qAOFkd2M2WZBicvYuKYpaAj0cvsJa6C7NoD+umv/UZbE\nX4IDPyog43Iu4XRQsdigowo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-t9z7l@santa-teresa-2c134.iam.gserviceaccount.com",
+  "client_id": "109353181773877628012",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-t9z7l%40santa-teresa-2c134.iam.gserviceaccount.com"
+}

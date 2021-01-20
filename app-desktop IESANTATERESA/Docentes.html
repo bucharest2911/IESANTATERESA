@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Dashboard</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body >
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+           
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="active has-sub">
+                            <a href="#">
+                                <i class="fas fa-home  "></i>Inicio</a>                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-table"></i>Registro</a>
+                        </li>
+                        <li>
+                            <a class="js-arrow" href="Docentes.html">
+                                <i class="fas fa-user"></i>Docentes</a>
+                        </li>
+                        <li>
+                            <a href="horarios.html">
+                                <i class="far fa-check-square"></i>Horarios</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-calendar-alt"></i>Calendar</a>
+                        </li>  
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="account2">
+                <div class="image img-cir img-120">
+                    <img src="images/escudo.jpg" alt="Colegio  Santa-Teresa" />
+                </div>
+                
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="active has-sub">
+                            <a href="#">
+                                <i class="fas fa-home"></i>Inicio</a>                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-table"></i>Registro</a>
+                        </li>
+                        <li>
+                            <a class="js-arrow" href="Docentes.html">
+                                <i class="fas fa-user"></i>Docentes</a>
+                        </li>
+                        <li>
+                            <a href="horarios.html">
+                                <i class="far fa-check-square"></i>Horarios</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-calendar-alt"></i>Calendar</a>
+                        </li>                                                
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Docentes</h2>
+                                    <button class="au-btn au-btn-icon au-btn--blue" data-toggle="modal" data-target="#mediumModal">
+                                        <i class="zmdi zmdi-plus"></i>Agregar Docente</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row m-t-30">
+                            <div class="col-md-12">
+                                <!-- DATA TABLE-->
+                                <div class="table-responsive m-b-40">
+                                    <table class="table table-borderless table-data3"id="tabla" >
+                                        <thead>
+                                            <tr class="info">
+                                                <th>Nombre</th>
+                                                <th>Apellido</th>
+                                                <th>Telefono</th>
+                                                <th>Cedula</th>
+                                                <th>Email</th>
+                                                <th>Remplazar Tag</th>
+                                                <th>Enviar Tag</th>
+                                                <th colspan="4"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                    
+                                   
+                                </div>
+                                <!-- END DATA TABLE-->
+                                
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+        </div>
+
+    </div>
+
+    <!-- modal medium -->
+			<div class="modal fade" id="mediumModal" tabindex="-1" role="dialog" >
+				<div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="card-header">
+                            <strong>Docente</strong> Formulario
+                        </div>
+                        <div class="card-body card-block">
+                            <form action="" method="post" class="form-horizontal" id="formulario">
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="hf-email" class=" form-control-label">Nombre</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="nombre" name="hf-email" placeholder="Ingrese Nombre..." class="form-control">
+                                         
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="hf-password" class=" form-control-label">Apellido</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="apellido" name="hf-password" placeholder="Ingrese apellido..." class="form-control">
+                                         
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="hf-password" class=" form-control-label">Cedula</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="cedula" name="hf-password" placeholder="Ingrese cedula..." class="form-control">
+                                     
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="hf-password" class=" form-control-label">Telefono</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="telefono" name="hf-password" placeholder="Ingrese telefono..." class="form-control">
+                                     
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="hf-password" class=" form-control-label">Email</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="email" name="hf-password" placeholder="Ingrese Email..." class="form-control">
+                                     
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="guardardocente"class="btn btn-primary">Guardar Docente</button>
+                            <button type="button" class="btn btn-secondary" id="cerrar" data-dismiss="modal">cerrar</button>
+                          </div>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Colegio SantaTeresa</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body"id="modales">
+                    
+                          
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">no</button>
+                          <button type="button"id="si" class="btn btn-primary">si</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="ModalDocente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Colegio SantaTeresa</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body"id="hola">
+                    
+                          
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">no</button>
+                          <button type="button"id="si" class="btn btn-primary">si</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            <!-- end modal medium -->
+            <div class="modal" id="my">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Colegio SantaTeresa</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body"id="mensaje">
+                    
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-danger" id="sisarra" data-dismiss="modal">si</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+        <!-- end modal medium -->
+        
+
+         
+    <!-- Jquery JS-->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAG_WNuLvZ1fEPqZEhyU3p8FkWjemZoU4I",
+    authDomain: "santa-teresa-2c134.firebaseapp.com",
+    databaseURL: "https://santa-teresa-2c134.firebaseio.com",
+    projectId: "santa-teresa-2c134",
+    storageBucket: "santa-teresa-2c134.appspot.com",
+    messagingSenderId: "853531172575"
+  };
+  firebase.initializeApp(config);
+</script>
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+    <script src="js/cruddocente.js"></script>
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+</body>
+
+</html>
+<!-- end document-->

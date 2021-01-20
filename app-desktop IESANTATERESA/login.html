@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <!-- BEGIN: Firebase code -->
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+  <script>
+
+    
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCW1cFex2x4DpfRI7_LUuiVgkgNE7127ZQ",
+    authDomain: "mi-proyecto-712f3.firebaseapp.com",
+    databaseURL: "https://mi-proyecto-712f3.firebaseio.com",
+    storageBucket: "mi-proyecto-712f3.appspot.com",
+    messagingSenderId: "997746801407"
+  };
+  firebase.initializeApp(config);
+</script>
+  <!-- END: Firebase code -->
+</head>
+
+<body>
+  <div class="container" id="access">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-login">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-6">
+                <a href="#" class="active" id="login-form-link">Acceso</a>
+              </div>
+              <div class="col-xs-6">
+                <a href="#" id="register-form-link">Registro</a>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-lg-12">
+                <form id="login-form" action="#" method="post" role="form" style="display: block;">
+                  <div class="form-group">
+                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Correo electrónico" value="">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Contraseña">
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3">
+                        <input type="button" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Acceder"
+                          onclick="login()">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="text-center">
+                          <a href="#" tabindex="5" class="forgot-password" onclick="recoverPass()">¿Olvidaste tu contraseña?</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <form id="register-form" action="#" method="post" role="form" style="display: none;">
+                  <div class="form-group">
+                    <input type="email" name="email" id="email-new" tabindex="1" class="form-control" placeholder="Correo electrónico" value="">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="password" id="password-new" tabindex="2" class="form-control" placeholder="Contraseña">
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3">
+                        <input type="button" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Registrar"
+                          onclick="createUser()">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="logged">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-login">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-12">
+                <h2>Bienvenido</h2>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="text-center">
+                  <span class="saludo"></span>
+                  <br />
+                  <br />
+                  <br />
+                  <input type="button" id="logout" class="form-control btn btn-warning" value="Salir" onclick="logout()">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="au theme template">
+<meta name="author" content="Hau Nguyen">
+<meta name="keywords" content="au theme template">
+
+<!-- Title Page-->
+<title>Dashboard</title>
+
+<!-- Fontfaces CSS-->
+<link href="css/font-face.css" rel="stylesheet" media="all">
+<link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+<link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+<link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+<!-- Bootstrap CSS-->
+<link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+<!-- Vendor CSS-->
+
+<link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+<link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+<link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+<link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+<link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+<link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+<!-- Main CSS-->
+<link href="css/theme.css" rel="stylesheet" media="all">
+</html>
